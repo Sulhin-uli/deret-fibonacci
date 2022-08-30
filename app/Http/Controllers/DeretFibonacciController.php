@@ -13,9 +13,9 @@ class DeretFibonacciController extends Controller
         # array ini akan digunakan untuk menampung bilangan fibonacci
         $fibonacci = [];
 
-        if ($number_n < 0) {
+        if ($number_n < 1) {
             # langsung hentikan fungsi jika $number_n kurang dari 0
-            return "number_n tidak boleh kurang dari 0";
+            return "number_n tidak boleh kurang dari 1";
         } else if ($number_start < 1) {
             # langsung hentikan fungsi jika $number_n kurang dari 0
             return "number_start tidak boleh kurang dari 1";
